@@ -1,0 +1,17 @@
+package com.example.prueba.repository;
+
+import com.example.prueba.domain.Persona;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface IPersonaRepository extends JpaRepository<Persona, Long> {
+
+//    List<Persona> findAll();
+//
+//    Persona findById(Long id);
+//
+//    void save(Persona persona);
+}
