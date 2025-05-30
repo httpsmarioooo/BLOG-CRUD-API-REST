@@ -16,4 +16,7 @@ https://github.com/user-attachments/assets/3dbf2aa9-f78e-4f80-8292-c8598b778208
 
 https://github.com/user-attachments/assets/c0e485be-3a52-4dbc-b476-d89ac8086ee5
 
+## Validaciones
+![image](https://github.com/user-attachments/assets/6fc679fc-a57f-45a7-a09f-d4d610670b8e)
+
 
