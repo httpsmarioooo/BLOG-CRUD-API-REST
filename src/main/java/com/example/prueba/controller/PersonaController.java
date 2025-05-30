@@ -34,6 +34,18 @@ public class PersonaController {
         return ResponseEntity.ok("Persona agregada con éxito");
     }
 
+    @DeleteMapping("/borrar/{id}")
+    public ResponseEntity<String> deletePersona(@PathVariable Long id) {
+        personaService.deletePersona(id);
+        return ResponseEntity.ok("Persona eliminada con éxito");
+    }
+
+    @PutMapping("/editar/{id}")
+    public ResponseEntity<String> editarPersona(@PathVariable Long id, @RequestBody Persona personaActualizada) {
+        personaService.updatePersona(id, personaActualizada);
+        return ResponseEntity.ok("Persona actualizada con éxito");
+    }
+
 }
 
 
