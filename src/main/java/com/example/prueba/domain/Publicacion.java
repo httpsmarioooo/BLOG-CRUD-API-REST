@@ -43,7 +43,6 @@ public class Publicacion {
     }
 
     // Getters y Setters
-
     public Long getId_Publicacion() {
         return id_Publicacion;
     }
@@ -83,5 +82,4 @@ public class Publicacion {
     public void setPersona(Persona persona) {
         this.persona = persona;
     }
-
 }
