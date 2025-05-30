@@ -12,8 +12,6 @@ import java.util.List;
 public class PersonaController {
 
     private final PersonaService personaService;
-
-
     public PersonaController(PersonaService personaService){
         this.personaService = personaService;
     }
@@ -35,7 +33,7 @@ public class PersonaController {
     }
 
     @DeleteMapping("/borrar/{id}")
-    public ResponseEntity<String> deletePersona(@PathVariable Long id) {
+    public ResponseEntity<String> elimianrPersona(@PathVariable Long id) {
         personaService.deletePersona(id);
         return ResponseEntity.ok("Persona eliminada con éxito");
     }
@@ -45,7 +43,6 @@ public class PersonaController {
         personaService.updatePersona(id, personaActualizada);
         return ResponseEntity.ok("Persona actualizada con éxito");
     }
-
 }
 
 
