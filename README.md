@@ -1,5 +1,6 @@
 # CRUD
 ## Una persona puede hacer varias publicaciones...
+### Me base con el ejemplo anterior para añadirle la funcionalidad de que un usuario puede hacer varias publicaciones (actividad de hoy)
 
 ## Video de funcionalidades para Persona
 
