@@ -48,7 +48,18 @@ public class PublicacionService implements IPublicacionService {
         existente.setTitulo(publicacionActualizada.getTitulo());
         existente.setContenido(publicacionActualizada.getContenido());
         existente.setPersona(publicacionActualizada.getPersona());
-
         publicacionRepository.save(existente);
     }
+
+//    @Override
+//    public void asignarComentarioAPublicacion(Long idpublicacion, Long idComentario) {
+//        Publicacion publicacion = obtenerPorId(idpublicacion);
+//        Comentario comentario = IComentarioService.obtenerPorId(idComentario);
+//
+//        if (publicacion != null && comentario != null) {
+//            comentario.setPublicacion(publicacion);
+//            publicacion.get().add(mascota);
+//            publicacionRepository.save(publicacion);
+//        }
+//    }
 }
