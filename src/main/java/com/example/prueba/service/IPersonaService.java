@@ -1,9 +1,10 @@
 package com.example.prueba.service;
 
 import com.example.prueba.domain.Persona;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public interface IPersonaService {
     List<Persona> obtenerTodos();
     Persona obtenerPorId (Long id);
