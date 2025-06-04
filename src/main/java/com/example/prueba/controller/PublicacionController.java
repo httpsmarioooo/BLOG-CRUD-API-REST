@@ -1,7 +1,5 @@
 package com.example.prueba.controller;
 
-
-import com.example.prueba.domain.Persona;
 import com.example.prueba.domain.Publicacion;
 import com.example.prueba.service.PublicacionService;
 import org.springframework.http.ResponseEntity;
