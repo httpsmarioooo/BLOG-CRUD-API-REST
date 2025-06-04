@@ -11,5 +11,4 @@ public interface IPublicacionService {
     void guardarPublicacion(Publicacion publicacion);
     void deletePublicacion(Long id);
     void updatePublicacion(Long id, Publicacion publicacionActualizada);
-//    void asignarComentarioAPublicacion(Long idpublicacion, Long idComentario);
 }

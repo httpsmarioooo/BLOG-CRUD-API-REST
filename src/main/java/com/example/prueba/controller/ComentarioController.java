@@ -22,8 +22,6 @@ public class ComentarioController {
     @GetMapping("/ObtenerComentarios")
     public List<Comentario> listaComentarios(){
         return comentarioService.obtenerTodos();
-
-
     }
 
     @GetMapping("/buscar/{id}")

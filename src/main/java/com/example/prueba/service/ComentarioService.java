@@ -12,8 +12,6 @@ import java.util.Optional;
 @Service
 public class ComentarioService implements IComentarioService{
 
-
-
     private final IComentarioRepository comentarioRepository;
     @Autowired
     public ComentarioService(IComentarioRepository comentarioRepository) {
