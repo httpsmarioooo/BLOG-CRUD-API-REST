@@ -26,7 +26,7 @@ https://github.com/user-attachments/assets/c0e485be-3a52-4dbc-b476-d89ac8086ee5
 
 
 
-##Endpoints REST
+## Endpoints REST
 ![image](https://github.com/user-attachments/assets/7a8943ec-f1cb-4f6c-b8fa-1e9ceb64e665)
 
 ## Petición:
