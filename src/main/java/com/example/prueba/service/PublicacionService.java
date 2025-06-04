@@ -1,5 +1,6 @@
 package com.example.prueba.service;
 
+import com.example.prueba.domain.Comentario;
 import com.example.prueba.domain.Publicacion;
 import com.example.prueba.repository.IPublicacionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,4 +52,16 @@ public class PublicacionService implements IPublicacionService {
 
         publicacionRepository.save(existente);
     }
+
+//    @Override
+//    public void asignarComentarioAPublicacion(Long idpublicacion, Long idComentario) {
+//        Publicacion publicacion = obtenerPorId(idpublicacion);
+//        Comentario comentario = IComentarioService.obtenerPorId(idComentario);
+//
+//        if (publicacion != null && comentario != null) {
+//            comentario.setPublicacion(publicacion);
+//            publicacion.get().add(mascota);
+//            publicacionRepository.save(publicacion);
+//        }
+//    }
 }

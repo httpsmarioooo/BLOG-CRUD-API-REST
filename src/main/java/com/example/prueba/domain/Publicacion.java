@@ -1,11 +1,14 @@
 package com.example.prueba.domain;
 
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Publicacion {
@@ -30,16 +33,22 @@ public class Publicacion {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "id_Persona", nullable = false)
     private Persona persona;
+
+    @OneToMany(mappedBy = "Publicacion", cascade = CascadeType.ALL)
+    @JsonManagedReference
+    private List<Comentario> comentarios= new ArrayList<>();
     
     public Publicacion() {
         this.fechaCreacion = LocalDateTime.now(); // Asignar fecha al momento de creación
     }
 
-    public Publicacion(String titulo, String contenido, Persona persona) {
+    public Publicacion(Long id_Publicacion, String titulo, String contenido, LocalDateTime fechaCreacion, Persona persona, List<Comentario> comentarios) {
+        this.id_Publicacion = id_Publicacion;
         this.titulo = titulo;
         this.contenido = contenido;
+        this.fechaCreacion = fechaCreacion;
         this.persona = persona;
-        this.fechaCreacion = LocalDateTime.now();
+        this.comentarios = comentarios;
     }
 
     // Getters y Setters
