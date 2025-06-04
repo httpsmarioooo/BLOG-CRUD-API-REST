@@ -23,7 +23,7 @@ https://github.com/user-attachments/assets/c0e485be-3a52-4dbc-b476-d89ac8086ee5
 
 ![image](https://github.com/user-attachments/assets/2d12cd61-113a-427f-90d3-518830b4890f)
 
-## Diagrama SQL:
+## Nuevo diagrama SQL:
 ![image](https://github.com/user-attachments/assets/be9a4a03-6a96-4446-8f7b-8269a65c3e52)
 
 
