@@ -21,9 +21,8 @@ public class Comentario {
     private LocalDateTime fechaCreacion;
 
     // Relación con Publicacion
-
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "id_publicacion", nullable = false)
+    @JoinColumn(name = "id_Publicacion", nullable = false)
     @JsonBackReference
     private Publicacion publicacion;
 

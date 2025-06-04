@@ -34,7 +34,7 @@ public class Publicacion {
     @JoinColumn(name = "id_Persona", nullable = false)
     private Persona persona;
 
-    @OneToMany(mappedBy = "Publicacion", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "publicacion", cascade = CascadeType.ALL)
     @JsonManagedReference
     private List<Comentario> comentarios= new ArrayList<>();
     
@@ -90,5 +90,14 @@ public class Publicacion {
 
     public void setPersona(Persona persona) {
         this.persona = persona;
+    }
+
+
+    public List<Comentario> getComentarios() {
+        return comentarios;
+    }
+
+    public void setComentarios(List<Comentario> comentarios) {
+        this.comentarios = comentarios;
     }
 }

@@ -1,6 +1,5 @@
 package com.example.prueba.service;
 
-import com.example.prueba.domain.Comentario;
 import com.example.prueba.domain.Publicacion;
 import com.example.prueba.repository.IPublicacionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,7 +48,6 @@ public class PublicacionService implements IPublicacionService {
         existente.setTitulo(publicacionActualizada.getTitulo());
         existente.setContenido(publicacionActualizada.getContenido());
         existente.setPersona(publicacionActualizada.getPersona());
-
         publicacionRepository.save(existente);
     }
 
